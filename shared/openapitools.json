@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "6.6.0",
+    "generators": {
+      "resell-api": {
+        "generatorName": "typescript-axios",
+        "output": "#{cwd}/src/api/#{name}",
+        "glob": "./openapi/*.yml",
+        "additionalProperties": {
+          "supportsES6": "true",
+          "npmVersion": "9.2.0",
+          "withInterfaces": true
+        }
+      }
+    }
+  }
+}
